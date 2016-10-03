@@ -1,3 +1,63 @@
-body {
-	
-}
+
+
+/*.make-row(@gutter: @grid-gutter-width) {
+  // Then clear the floated columns
+  .clearfix();*/
+
+  @media (min-width: @screen-sm-min) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+
+  body {
+    padding-top: 0px; 
+    }
+
+  .container {
+
+    }
+
+  .container-fluid {
+
+    }
+
+.navbar-fixed-top {
+/*controls padding top of navbar*/
+  }
+
+  h1 {
+    font-family: 'Shrikhand', cursive;
+    }
+
+  p {
+    font-family: 'Farsan', cursive;
+    }
+
+ .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+      border-color: #C69429;
+      font-family: 'Droid Serif', serif;
+      background-color: #C69429;
+      opacity: 0.5;
+      @gray-light;
+    }
+
+ .jumbotron {
+    background-image: url('IMG/car_website_head.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+  .container text-center {
+    background-color: transparent;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: transparent;
+    padding: 25px;
+    }
+
+
+ 
