@@ -1,0 +1,18 @@
+(function () { 
+​var firstName = “Richard”;
+  function init () {
+   doStuff (firstName);
+  // code to start the application​
+ } 
+​
+​function doStuff () {
+  // Do stuff here​
+}
+​
+​function doMoreStuff () {
+ // Do more stuff here​
+}
+​
+​// Start the application 
+init (); 
+}) ();
