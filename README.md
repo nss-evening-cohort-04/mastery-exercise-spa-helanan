@@ -74,7 +74,7 @@ Please read, and feel free to use, the code below to get started.
 ```js
 function populatePage (inventory) {
   // Loop over the inventory and populate the page
-  
+
   // Now that the DOM is loaded, establish all the event listeners needed
   CarLot.activateEvents();
 }
