@@ -1,3 +1,32 @@
-{ "cars": [ make": "Nissan", "model": "Rogue", "year": "2006", "price":
-{ ""8999", "description": "This is an immaculate 2006 Nissan Rogue with only
-{ "25000 miles on it. Leather seats, power everything." } ] }
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+	{
+      "make": "Acura",
+      "model": "ILX",
+      "year": "2013",
+      "price": "25,000",
+      "description": "This is an immaculate 2013 Acura ILX with only 11,000 miles on it. Leather seats, full tech package, automatic, v4."
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "year": "2000",
+      "price": "5,000",
+      "description": "Has some dents and dings but still a beauty with only 100,000 miles on it. Sun-roof, 5 cd changer, custom head unit, gold rims."
+    }
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "year": "2000",
+      "price": "5,000",
+      "description": "Has some dents and dings but still a beauty with only 100,000 miles on it. Sun-roof, 5 cd changer, custom head unit, gold rims."
+    }
+  ]
+}
