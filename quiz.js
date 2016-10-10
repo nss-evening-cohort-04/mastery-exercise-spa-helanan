@@ -2,17 +2,22 @@ function populatePage (inventory) {
 var selectedCar = '';
       		for (var i=0; i<selectedCar.inventory.length; i++) {
       			//redo all of these to match
+            selectedCar += '<div class="container">';
       			selectedCar += '<div class="inventory">';
+            selectedCar += '<div class="col-sm-4">';
+             selectedCar += '<div class="list-group">';
       			selectedCar += '<img src=" ' + selectedCar.inventory[i].make + '" ';
       			selectedCar += 'alt="' + selectedCar.inventory[i].model + '" />';
       			selectedCar += '<p><b>' + selectedCar.inventory[i].year + '</b><br>';
       			selectedCar += selectedCar.inventory[i].price + '</p>';
-      			selectedCar += '</div>';
+      			selectedCar += '</div>' + '<br>' + '</div>' + '<br>' + '<br>';
       		}
+
       		//REMEMBER TO USE BOOTSTRAP ELEMENTS
       		document.getElementById('content').innerHTML = newContent;
       	}
       });
+
     xhr.open('GET', 'inventory.json', true);
     xhr.send(null);
     }
