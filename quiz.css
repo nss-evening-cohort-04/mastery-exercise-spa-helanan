@@ -21,8 +21,11 @@
 
   }
 
-.navbar-fixed-top {
-/*controls padding top of navbar*/
+  .jumbotron {
+    background-image: url('IMG/car_website_head.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
   }
 
   h1 {
@@ -32,9 +35,27 @@
   p {
     font-family: 'Farsan', cursive;
   }
- 
+
+ .active2 {
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: -9px;
+    margin-bottom: 5px;
+ }
+
+.active0 {
+  margin-top: -9px;
+  margin-bottom: 5px;
+}
+
+ nav.navbar-nav {
+  color: black;
+ }
+
  .navbar {
       margin-bottom: 25px;
+      padding-top: 15px;
       border-radius: 0;
       border-color: #C69429;
       font-family: 'Droid Serif', serif;
@@ -42,19 +63,16 @@
       opacity: 0.5;
   }
 
+  #nav {
+    float: right;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
 #inputSuccess5 {
   position: static;
 }
 
- .jumbotron {
-    background-image: url('IMG/car_website_head.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .container text-center {
-    background-color: transparent;
-  }
 
   .panel-heading.panel-custom {
     border: 2px solid black;
@@ -72,6 +90,7 @@
     border-bottom: 0px;
     border-top: 0px;
   }
+
 
   .panel-footer.panel-custom {
     border: 2px solid black;
