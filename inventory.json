@@ -1,32 +1,46 @@
 {
   "cars": [
     {
-      "make": "Nissan",
-      "model": "Rogue",
-      "year": "2006",
+      "make": "British Motors",
+      "model": "Roadster",
+      "year": "1976",
       "price": "8999",
-      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+      "description": "This is an immaculate 1976 British Roadster with only 125000 miles on it. Leather seats, power everything."
     },
 	{
-      "make": "Acura",
-      "model": "ILX",
-      "year": "2013",
-      "price": "25,000",
-      "description": "This is an immaculate 2013 Acura ILX with only 11,000 miles on it. Leather seats, full tech package, automatic, v4."
+      "make": "Chevrolet",
+      "model": "Bel Air",
+      "year": "1959",
+      "price": "45,000",
+      "description": "This vintage Chevrolet Bel Air Convertible, with 5 passenger seating, is a true beauty.  Original vintage details give drivers the feeling of traveling back in time."
     },
     {
-      "make": "Honda",
-      "model": "Accord",
-      "year": "2000",
+      "make": "Volkswagen",
+      "model": "Bug",
+      "year": "1965",
       "price": "5,000",
-      "description": "Has some dents and dings but still a beauty with only 100,000 miles on it. Sun-roof, 5 cd changer, custom head unit, gold rims."
-    }
+      "description": "Original red color, red custom painted rims, a little rust on the trim but a smooth ride."
+    },
     {
-      "make": "Honda",
-      "model": "Accord",
-      "year": "2000",
-      "price": "5,000",
-      "description": "Has some dents and dings but still a beauty with only 100,000 miles on it. Sun-roof, 5 cd changer, custom head unit, gold rims."
+      "make": "Volkswagen",
+      "model": "Bus",
+      "year": "1960",
+      "price": "15,000",
+      "description": "This car will brighten up your day with its original Grille and Tail Light. 200,000 miles and in mint condition"
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Camper",
+      "year": "1960",
+      "price": "10,000",
+      "description": "Fun orange color, spacious, propane tank included, pull out bed."
+    },
+    {
+      "make": "Wolseley",
+      "model": "Hornet",
+      "year": "1968",
+      "price": "25,000",
+      "description": "Has some dents and dings but still a beauty with only 100,000 miles on it. Original wheels, 5 cd changer, custom head unit, leather interior."
     }
   ]
 }
