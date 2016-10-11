@@ -1,3 +1,17 @@
+var xhr = new XMLHttpRequest();
+xhr.open('GET', "inventory.json", true);
+xhr.send();
+ 
+xhr.onreadystatechange = processRequest;
+ 
+function processRequest(e) {
+ if (xhr.readyState == 4 && xhr.status == 200) {
+        var response = JSON.parse(xhr.responseText);
+        alert(response.ip);
+
+  }
+}
+
 function populatePage (inventory) { 
 var selectedCar = '';
       		for (var i=0; i<selectedCar.inventory.length; i++) {

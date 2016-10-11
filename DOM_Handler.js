@@ -1,8 +1,22 @@
-var xhr = new XMLHttpRequest();
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '');
+  xhr.onreadystatechange = function () {
+    //if (xhr.readyState === 4)
+    return true; {
+      document.getElementById('ajax').innerHTML = xhr.responseText;
+    }
+  };
 
-xhr.onload = function(cars) {
-	// if (xhr.status === 200) {
-responseObject = JSON.parse(xhr.responseText);
+  function sendAJAX() {
+    xhr.send();
+    document.getElementById('load').style.display = 'none';
+  }
+
+xhr.onreadystatechange = processRequest;
+
+xhr.addEventListener("readystatechange", processRequest, false);
+
+
 
 var newContent = '';
 for (var i=0; i < responseObject.events.length; i++) {
