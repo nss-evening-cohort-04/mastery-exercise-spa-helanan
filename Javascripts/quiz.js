@@ -1,48 +1,40 @@
-function populatePage (inventory) { 
-var selectedCar = '';
-      		for (var i=0; i<selectedCar.inventory.length; i++) {
-      			//redo all of these to match
-            selectedCar += '<div class="container">';
-      			selectedCar += '<div class="inventory">';
-            selectedCar += '<div class="col-sm-4">';
-             selectedCar += '<div class="list-group">';
-      			selectedCar += '<img src=" ' + selectedCar.inventory[i].make + '" ';
-      			selectedCar += 'alt="' + selectedCar.inventory[i].model + '" />';
-      			selectedCar += '<p><b>' + selectedCar.inventory[i].year + '</b><br>';
-      			selectedCar += selectedCar.inventory[i].price + '</p>';
-      			selectedCar += '</div>' + '<br>' + '</div>' + '<br>' + '<br>';
-      		}
+function inventoryLoader(inventoryData) {
+//adding text to container//
+// var carCards = document.getElementById('inventoryDiv');
+// var carText = carCards.firstChild.nodeValue;
+// carText = carText.replace(inventoryData);
+// carCards.firstChild.nodeValue = carText;
+//end//
 
-      		//REMEMBER TO USE BOOTSTRAP ELEMENTS
-      		document.getElementById('content').innerHTML = newContent;
-      	}
-      });
+Insert.innerHTML += inventoryString;
 
-    xhr.open('GET', 'inventory.json', true);
-    xhr.send(null);
-    }
+inventoryLoader.addEvents();
+  inventoryLoader.textInputEvents();
   };
 
-})();
+
+  // Loop over the inventory and populate the page
+
+var inventoryData = document.getElementById('inventoryDiv');
+    for (var i = 0; i<cars.length; i++) {
+              if(i%3 === 0){
 
 
+inventory.innerHTML += `Make: “ “’ + ${cars[i].make}`;  
+inventory.innerHTML += `Model: “ “’ + ${cars[i].model}`;
+inventory.innerHTML += `Year: “ “’ + ${cars[i].year}`;
+inventory.innerHTML += `Price: “ “’ + ${cars[i].price}`;
+inventory.innerHTML += `${cars[i].description}`
+inventory.innerHTML += `Availability: “ “’ + ${cars[i].checkAvailability()}`;
+ if((i+1)%3 === 0){
+        inventoryString +=`</div>`;
+    };
+console.log(inventoryData);
+  printTo.innerHTML =  newInventory;  
+  };
 
 
-
-// Now that the DOM is loaded, establish all the event listeners
-needed CarLot.activateEvents(); } 
-
-CarLot.loadInventory();
-
-
-var CarLot = (function () {
-  var inventory = [];
-
-  return {
-   
-
-  function () {
-      	if(xhr.status === 200) {
-      		responseObject = JSON.parse(xhr.responseText);
-
-      		
+ newInventory.activateEvents();
+  };
+  
+newInventory.inventoryLoader(inventoryData);

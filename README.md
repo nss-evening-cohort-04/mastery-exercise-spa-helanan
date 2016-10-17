@@ -21,7 +21,8 @@ availability of each car in inventory
 4. Use Bootstrap to create rows. 
 5. Each row should contain 3 columns. 
 6. Make sure you have a parent element with a class of `container`. Hint: You must build up the entire string of columns/rows before injecting into the DOM. 
-7. Use a counter variable to know when to close a row after three columns.
+7. 
+
 
 8. Put a text input field in the navigation bar.
 
@@ -48,36 +49,7 @@ availability of each car in inventory
 
 Please read, and feel free to use, the code below to get started.
 
-##### inventory.json
 
-```json
-{
-  "cars": [
-    {
-      "make": "Nissan",
-      "model": "Rogue",
-      "year": "2006",
-      "price": "8999",
-      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
-    }
-  ]
-}
-```
-
-##### quiz.js
-
-```js
-function populatePage (inventory) {
-  // Loop over the inventory and populate the page
-
-  // Now that the DOM is loaded, establish all the event listeners needed
-  CarLot.activateEvents();
-}
-
-// Load the inventory and send a callback function to be
-// invoked after the process is complete
-CarLot.loadInventory();
-```
 
 ##### CarLot.js
 
