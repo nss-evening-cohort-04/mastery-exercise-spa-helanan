@@ -1,0 +1,107 @@
+
+
+/*.make-row(@gutter: @grid-gutter-width) {
+  // Then clear the floated columns
+  .clearfix();*/
+
+  @media (min-width: @screen-sm-min) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+
+  body {
+    padding-top: 0px; 
+  }
+
+  .container {
+
+  }
+
+  .container-fluid {
+
+  }
+
+  .jumbotron {
+    background-image: url('IMG/car_website_head.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    font-family: 'Shrikhand', cursive;
+  }
+
+  p {
+    font-family: 'Farsan', cursive;
+  }
+
+ .active2 {
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: -9px;
+    margin-bottom: 5px;
+ }
+
+.active0 {
+  margin-top: -9px;
+  margin-bottom: 5px;
+}
+
+ nav.navbar-nav {
+  color: black;
+ }
+
+ .navbar {
+      margin-bottom: 25px;
+      padding-top: 15px;
+      border-radius: 0;
+      border-color: #C69429;
+      font-family: 'Droid Serif', serif;
+      background-color: #C69429;
+      opacity: 0.5;
+  }
+
+  #nav {
+    float: right;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+#inputSuccess5 {
+  position: static;
+}
+
+
+  .panel-heading.panel-custom {
+    border: 2px solid black;
+    border-bottom: 0px;
+    background: teal;
+    color: white;
+    font-family: 'Shrikhand', serif;
+    font-size: 1.50em;
+    font-variant: small-caps;
+    text-align: center;
+  }
+
+.panel-body.panel-custom {
+    border: 2px solid black;
+    border-bottom: 0px;
+    border-top: 0px;
+  }
+
+
+  .panel-footer.panel-custom {
+    border: 2px solid black;
+    border-top: 0px;
+  }
+
+  footer {
+    background-color: #C69429;
+    padding: 25px;
+    opacity: 0.5;
+  }
+
+
+ 
