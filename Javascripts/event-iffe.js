@@ -1,55 +1,45 @@
-(function(CarLot{
 
+var Inventory = (function (previousInventory) {
+  var containerEl = document.getElementById("container");
+  var inputEl = document.getElementById("user-input");
+  var buttonEl = document.getElementById("submit");
 
-CarLot.addEventListener("load", function () {
-inventoryLoader.addEventListener("load", function () {s
+  previousInventory.loadCards = function () {
+    var cards = document.getElementsByClassName("cards")
+    return cards
+  };
 
-            
-var elSelectedCar = document.getElementById('inventoryDiv');
-var elColorChange = document.getElementById('inventoryDiv');
-var elTextInput = document.getElementById('nav');
-var elSubmitBtn = document.getElementById('btn');
+  previousInventory.activateEvents = function(event) {
+    var cards = previousInventory.loadCards();
 
-function changeBorder(increaseWidth) {
-  //set the border width
-  if (elSelectedCar.onclick = true) {
-   elSelectedCar.style.borderWidth = "thick";
-  elColorChange.style.backgroundColor = "red";
-  } else {
-  elSelectedCar.style.borderWidth = "width|initial";
-  elColorChange.style.backgroundColor = "color|initial";
-  }
-}
-  
- function checkUserInput() {
- var userInput = el.value;
- if (userInput.length < 1) {
- elMsg.className = 'selectedCar';
- elMsg.textContent = 'Search...';
- } else {
- elMsg.textContent = '';
-    }
-  }
- function bindUserInput() {
-  el.Msg.ClassName = 'userType';
-  el.Msg.innerHTML = 'userInput';
- }
- 
- var el = document.getElementByID('UserInput');
- var elMsg = document.getElementById('user-input');
- 
- el.addEventListeners('click', checkUserInput, false);
- el.addEventListeners('keydown', bindUserInput, false);
-  
- 
-document.getElementById("inventoryDiv").addEventListener("keydown",function(e){
-  var find = document.getElementsByClassName("inventoryData")[0];
-            if(e.keyCode === 13){
-                 find.lastChild.innerHTML= document.getElementById("search-input").value;
-                 document.getElementById("inventoryDiv").value='';
-                 document.getElementById("inventoryDiv").blur();
+    for (var i = 0; i < cards.length; i++) {      
+      console.log("makeCard", cards[i]);
+      cards[i].addEventListener("click", function(event) {
         
-       return inventoryLoader;
-        });
+        var card = event.currentTarget;
+        previousInventory.changeCard(card);
+        inputEl.focus();
+        inputEl.value = "";
+        previousInventory.infuseText(card);
       });
-     })(CarLot || {});
+    }
+        
+
+    buttonEl.addEventListener("click", function(event) {
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("on");
+      }
+      
+    });
+
+    inputEl.addEventListener("keyup", function(event) {
+      var inputText = event.target.value;
+      var newDescription = document.getElementsByClassName("description");
+      newDescription[0].childNodes[6].innerHTML = inputText;  
+    });
+
+  };
+
+  return previousInventory;
+  
+})(Inventory);
