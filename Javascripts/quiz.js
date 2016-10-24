@@ -1,40 +1,30 @@
-function inventoryLoader(inventoryData) {
-//adding text to container//
-// var carCards = document.getElementById('inventoryDiv');
-// var carText = carCards.firstChild.nodeValue;
-// carText = carText.replace(inventoryData);
-// carCards.firstChild.nodeValue = carText;
-//end//
+/**** FIRST IIFE ****/
+var Iventory = (function() {
+  // Private variable (array)
+  var inventoryCarInventory = [];
 
-Insert.innerHTML += inventoryString;
+  return {
+    loadCar: function (callback) { 
+     
+      var inventoryCarLoader = new XMLHttpRequest();
 
-inventoryLoader.addEvents();
-  inventoryLoader.textInputEvents();
-  };
+      inventoryCarLoader.addEventListener("load", function () {
 
+        var inventoryCarData = JSON.parse(this.responseText);
+        inventoryCarInventory = inventoryCarData.cars;
 
-  // Loop over the inventory and populate the page
+        callback(inventoryCarInventory);
 
-var inventoryData = document.getElementById('inventoryDiv');
-    for (var i = 0; i<cars.length; i++) {
-              if(i%3 === 0){
-
-
-inventory.innerHTML += `Make: “ “’ + ${cars[i].make}`;  
-inventory.innerHTML += `Model: “ “’ + ${cars[i].model}`;
-inventory.innerHTML += `Year: “ “’ + ${cars[i].year}`;
-inventory.innerHTML += `Price: “ “’ + ${cars[i].price}`;
-inventory.innerHTML += `${cars[i].description}`
-inventory.innerHTML += `Availability: “ “’ + ${cars[i].checkAvailability()}`;
- if((i+1)%3 === 0){
-        inventoryString +=`</div>`;
-    };
-console.log(inventoryData);
-  printTo.innerHTML =  newInventory;  
-  };
+      });
+      
+      inventoryCarLoader.open("Get", "inventory.json");
+      inventoryCarLoader.send();     
+    }
+  }
+})();
 
 
- newInventory.activateEvents();
-  };
-  
-newInventory.inventoryLoader(inventoryData);
+
+
+
+
