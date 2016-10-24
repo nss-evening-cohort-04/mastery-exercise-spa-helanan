@@ -1,107 +1,82 @@
-
-
-/*.make-row(@gutter: @grid-gutter-width) {
-  // Then clear the floated columns
-  .clearfix();*/
-
-  @media (min-width: @screen-sm-min) {
-    margin-left:  (@gutter / -2);
-    margin-right: (@gutter / -2);
-  }
-
-  body {
-    padding-top: 0px; 
-  }
-
-  .container {
-
-  }
-
-  .container-fluid {
-
-  }
-
-  .jumbotron {
-    background-image: url('IMG/car_website_head.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-  }
-
-  h1 {
-    font-family: 'Shrikhand', cursive;
-  }
-
-  p {
-    font-family: 'Farsan', cursive;
-  }
-
- .active2 {
-    background-color: orange;
-    border-radius: 10px;
-    font-size: 17px;
-    margin-top: -9px;
-    margin-bottom: 5px;
- }
-
-.active0 {
-  margin-top: -9px;
-  margin-bottom: 5px;
+body {
+  padding-top: 0px; 
+  width: 100%;
 }
 
- nav.navbar-nav {
-  color: black;
- }
-
- .navbar {
-      margin-bottom: 25px;
-      padding-top: 15px;
-      border-radius: 0;
-      border-color: #C69429;
-      font-family: 'Droid Serif', serif;
-      background-color: #C69429;
-      opacity: 0.5;
-  }
-
-  #nav {
-    float: right;
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-
-#inputSuccess5 {
-  position: static;
+.enjoy-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  color: red;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px;
 }
 
+#navBar {
+  height: 75px;
+  background-color: rgba(118, 133, 138, .5);
+}
 
-  .panel-heading.panel-custom {
-    border: 2px solid black;
-    border-bottom: 0px;
-    background: teal;
-    color: white;
-    font-family: 'Shrikhand', serif;
-    font-size: 1.50em;
-    font-variant: small-caps;
-    text-align: center;
-  }
+.navbar-form {
+  margin-top: 20px;
+  margin-left: 40px;
+}
 
-.panel-body.panel-custom {
-    border: 2px solid black;
-    border-bottom: 0px;
-    border-top: 0px;
-  }
+.btn {
+  height: 33px;
+  border: 4px solid black;
+  padding: 10px 10px 10px 10px;
+  background-color: blue;
+}
 
+#row {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+}
 
-  .panel-footer.panel-custom {
-    border: 2px solid black;
-    border-top: 0px;
-  }
+.divider{
+  width: 100%;
+  height: 10px;
+  display: block;
+  background-color: purple;
+}
 
-  footer {
-    background-color: #C69429;
-    padding: 25px;
-    opacity: 0.5;
-  }
+#container {
+  width: 90%;
+  margin: 20px auto;
+}
 
+.cards {
+  width: 32%;
+  background-color: teal;
+  margin: 20px 0 10px 43px;
+  display: inline-block;
+}
 
- 
+.on{
+  border: 10px groove rgba(100, 130, 200, .1)!important; /* overides inline styling from DOM */
+  background-color: grey;
+}
+
+h3 {
+  color: red;
+}
+
+h3, p {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.description {
+  text-align: justify;
+  height: 150px;
+}
