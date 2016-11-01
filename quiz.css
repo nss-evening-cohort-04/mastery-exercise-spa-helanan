@@ -1,8 +1,5 @@
 
 
-/*.make-row(@gutter: @grid-gutter-width) {
-  // Then clear the floated columns
-  .clearfix();*/
 
   @media (min-width: @screen-sm-min) {
     margin-left:  (@gutter / -2);
@@ -11,14 +8,6 @@
 
   body {
     padding-top: 0px; 
-  }
-
-  .container {
-
-  }
-
-  .container-fluid {
-
   }
 
   .jumbotron {
@@ -36,18 +25,13 @@
     font-family: 'Farsan', cursive;
   }
 
- .active2 {
+ #outputEl {
     background-color: orange;
     border-radius: 10px;
     font-size: 17px;
     margin-top: -9px;
     margin-bottom: 5px;
  }
-
-.active0 {
-  margin-top: -9px;
-  margin-bottom: 5px;
-}
 
  nav.navbar-nav {
   color: black;
@@ -103,5 +87,5 @@
     opacity: 0.5;
   }
 
-
+carCardClass
  

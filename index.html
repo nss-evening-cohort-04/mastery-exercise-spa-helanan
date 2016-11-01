@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatible for edge -->
+  <title>Helana NSS Single Page Applications Quiz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Boostrap CDN -->
+  <link rel="stylesheet" href="quiz.css"> <!-- css link -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Farsan|Shrikhand" rel="stylesheet"> <!-- google fonts -->
+
+<!-- NAVIGATION -->
+<div class="jumbotron">
+      <div class="container text-center">
+        <h1>HELANA'S USED CARS</h1>
+        <p>USED AND ABUSED SINCE 1986</p>
+      </div>
+    </div>
+<nav class="navbar navar-default navbar-fixed-top navbar-collapse nav-prop customNav">
+  <div class="container-fluid"> <!-- fluid container div-->
+  <!-- Toggle and logo settings -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"></button>
+      <a class="navbar-brand" href="#">Helana's Used Cars</a>
+  </div> 
+<!--   input area -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <div class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+      <input id="textInputUpdater" type="text" class="form-control" placeholder="Update Description...">
+      </div>
+      <button type="button" class="btn btn-default">Clear</button>
+      </div>
+    </div> <!-- end of navbar -->
+  </div> <!-- end of container -->
+  </nav> <!-- end of nav -->
+
+<!--   Output Area .carContainer-->
+<div class="container-fluid carContainer">
+  <div id="outputEl"></div>
+</div>
+
+  <script srce="https://ajax.googleapis.com/ajax/libsjquery/3.1.0/jquery.min.js">
+  </script>
+  <script src="Javascripts/Loader.js"></script>
+  <script src="Javascripts/event-iffe.js"></script>
+  <script src="Javascripts/CarLot.js"</script>
+  <script src="Javascripts/augmented-carlot.js"</script>
+  </body>
+  <html>
+
+<!-- <!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Single Page Applications Quiz</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="quiz.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Farsan|Shrikhand" rel="stylesheet">
-  </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="quiz.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Farsan|Shrikhand" rel="stylesheet"> -->
+ <!-- <!--  </head>
   <body>
     <div class="jumbotron">
       <div class="container text-center">
@@ -21,7 +71,7 @@
         <div class="navbar-header navbar-custom">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <!-- <span class="icon-bar"></span> -->
-          <span class="icon-bar"></span>
+          <!-- <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
           <img alt="Brand" src="http://res.cloudinary.com/emma/image/upload/c_scale,r_7,w_50/v1475393548/speedometer_asafaq.gif">
@@ -43,16 +93,13 @@
         </ul>
       </div>
     </nav>
-
-    <div id="load-inventory" class="container"></div>
-      <div class="row">
+    <div id="container" class="flex-container"></div>
         <div class="col-sm-4">
-          <div class="list-group">
             <div class="panel panel-primary">
               <div class="panel-heading panel-custom" id="make">1976 BM Roadster</div>
-              <div class="panel-body panel-custom"><img src="http://res.cloudinary.com/emma/image/upload/v1475388655/carboard-01_yjxdpz.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-body panel-custom"><img src="http://res.cloudinary.com/emma/image/upload/v1475388655/carboard-01_yjxdpz.jpg" class="img-responsive" style="width:100%" alt="Image"> --><!-- </div>
+               <div class="inventoryDiv"> 
               <div class="panel-footer panel-custom">
-                  <div class="inventoryDiv"> </div>
               </div>
             </div>
           </div>
@@ -60,52 +107,54 @@
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading panel-custom" id="make">1959 Chevy Bel Air</div>
-            <div class="panel-body panel-custom"><img src="http://res.cloudinary.com/emma/image/upload/v1475388654/carboard-04_aypjle.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer panel-custom">
-              <div class="inventoryDiv"> </div>
+            <div class="panel-body panel-custom"> --><!-- <img src="http://res.cloudinary.com/emma/image/upload/v1475388654/carboard-04_aypjle.jpg" class="img-responsive" style="width:100%" alt="Image"> --><!-- </div> -->
+           <!--  <div class="inventoryDiv"> </div>
+            <div class="panel-footer panel-custom">  
+                </div>
+              </div>
             </div>
-          </div>
         </div>
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading panel-custom" id="make">1965 Volkswagen Bug</div>
-            <div class="panel-body panel-custom"><img src="http://res.cloudinary.com/emma/image/upload/v1475388655/carboard-02_s9jpqt.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-body panel-custom"><!-- <img src="http://res.cloudinary.com/emma/image/upload/v1475388655/carboard-02_s9jpqt.jpg" class="img-responsive" style="width:100%" alt="Image"> --></div>
+             <!-- <div class="inventoryDiv"> </div>
             <div class="panel-footer panel-custom">
-            <div class="inventoryDiv"> </div>
-            </div>
           </div>
         </div>
       </div>
     </div><br>
     <div class="container">
-      <div class="row">
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading panel-custom" id="make">1960 Volkswagen Bus</div>
-            <div class="panel-body panel-custom"><img src="http://res.cloudinary.com/emma/image/upload/v1475388655/carboard-05_sblhyh.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-body panel-custom"> --><!-- <img src="http://res.cloudinary.com/emma/image/upload/v1475388655/carboard-05_sblhyh.jpg" class="img-responsive" style="width:100%" alt="Image"></div> -->
+       <!--      <div class="inventoryDiv"> </div>
             <div class="panel-footer panel-custom">
-            <div class="inventoryDiv"> </div>
-            </div>
-          </div>
         </div>
+         </div>
+          </div>
+           </div>
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading panel-custom">1960 Chevy Camper</div>
-            <div class="panel-body panel-custom"><img src="http://res.cloudinary.com/emma/image/upload/v1475388654/carboard-06_yeqfez.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-body panel-custom"><!-- <img src="http://res.cloudinary.com/emma/image/upload/v1475388654/carboard-06_yeqfez.jpg" class="img-responsive" style="width:100%" alt="Image"> --></div>
+            <!-- <div class="inventoryDiv"> </div>
             <div class="panel-footer panel-custom">
-            <div class="inventoryDiv"> </div>
+             </div>
             </div>
-          </div>
+            </div>
         </div>
         <div class="col-sm-4">
           <div class="panel panel-primary">
             <div class="panel-heading panel-custom">1968 Wolseley Hornet</div>
             <div class="panel-body panel-custom"><img src="http://res.cloudinary.com/emma/image/upload/v1475388654/carboard-03_xm9i52.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-            <div class="panel-footer panel-custom">
             <div class="inventoryDiv"> </div>
+            <div class="panel-footer panel-custom">
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div><br><br>
     <footer class="container-fluid text-center">
@@ -116,10 +165,10 @@
       </form>
     </footer>
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="Javascripts/DOM_Handler.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> --> -->
+ <!--    <script src="quiz.js" type="text/javascript"></script>
      <script src="Javascripts/CarLot.js" type="text/javascript"></script>
-    <script src="Javascripts/augmented-carlot.js" type="text/javascript"></script>
-    <script src="Javascripts/event-iffe.js" type="text/javascript"></script>
+    <script src="Javascripts/augmented-carlot.js" type="text/javascript"></script> -->
+<!--     <script src="Javascripts/event-iffe.js" type="text/javascript"></script>
   </body>
 </html>
