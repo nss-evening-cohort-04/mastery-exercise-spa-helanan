@@ -1,5 +1,7 @@
 
-
+/*.make-row(@gutter: @grid-gutter-width) {
+  // Then clear the floated columns
+  .clearfix();*/
 
   @media (min-width: @screen-sm-min) {
     margin-left:  (@gutter / -2);
@@ -9,6 +11,25 @@
   body {
     padding-top: 0px; 
   }
+
+                  .inventoryDiv {
+                    height: 700px;
+                  }
+
+                  .active2 {
+                    background-color: orange;
+                    border-radius: 10px;
+                    font-size: 17px;
+                    margin-top: -9px;
+                    margin-bottom: 5px;
+                  }
+
+                  .active0 {
+                    margin-top: -9px;
+                    margin-bottom: 5px;
+                  }
+
+/*jumbotron*/
 
   .jumbotron {
     background-image: url('IMG/car_website_head.jpg');
@@ -24,50 +45,45 @@
   p {
     font-family: 'Farsan', cursive;
   }
+/*end jumbotron*/
 
- #outputEl {
-    background-color: orange;
-    border-radius: 10px;
-    font-size: 17px;
-    margin-top: -9px;
-    margin-bottom: 5px;
- }
-
- nav.navbar-nav {
+/*nav-bar start*/
+ 
+ navbar-form navbar-left {
   color: black;
  }
 
- .navbar {
-      margin-bottom: 25px;
-      padding-top: 15px;
-      border-radius: 0;
-      border-color: #C69429;
-      font-family: 'Droid Serif', serif;
-      background-color: #C69429;
-      opacity: 0.5;
-  }
-
-  #nav {
-    float: right;
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-
-#inputSuccess5 {
-  position: static;
+.navbar {
+    margin-bottom: 25px;
+    padding-top: 15px;
+    border-radius: 0;
+    border-color: #C69429;
+    font-family: 'Droid Serif', serif;
+    background-color: #C69429;
+    opacity: 0.5;
 }
 
+#nav {
+  float: right;
+  margin-left: 2px;
+  margin-right: 2px;
+}
 
-  .panel-heading.panel-custom {
-    border: 2px solid black;
-    border-bottom: 0px;
-    background: teal;
-    color: white;
-    font-family: 'Shrikhand', serif;
-    font-size: 1.50em;
-    font-variant: small-caps;
-    text-align: center;
-  }
+            #inputSuccess5 {
+              position: static;
+            }
+
+
+.panel-heading.panel-custom {
+  border: 2px solid black;
+  border-bottom: 0px;
+  background: teal;
+  color: white;
+  font-family: 'Shrikhand', serif;
+  font-size: 1.50em;
+  font-variant: small-caps;
+  text-align: center;
+}
 
 .panel-body.panel-custom {
     border: 2px solid black;
@@ -75,17 +91,139 @@
     border-top: 0px;
   }
 
+/*card formatting start*/
 
-  .panel-footer.panel-custom {
-    border: 2px solid black;
-    border-top: 0px;
-  }
+ .containerLoad {
+    background-color: grey;
+    border-radius: 15px;
+    font-size: 17px;
+    margin-top: 9px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 33%;
+    height: 85%;
+ }
 
-  footer {
-    background-color: #C69429;
-    padding: 25px;
-    opacity: 0.5;
-  }
+ .row {
+  color: black;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: grey;
+  font-family: 'Farsan', cursive;
+ }
 
-carCardClass
+.col-sm-4 {
+  border-radius: 15px;
+  margin-top: 9px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.list-group {
+  border-radius: 15px;
+  margin-top: 9px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.panel panel-primary custom {
+  border-radius: 15px;
+  margin-top: 9px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.container-fluid carContainer {
+  display: inherit;
+  border-radius: 15px;
+  margin-top: 9px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#carCardClass {
+  display: inherit;
+  border-radius: 15px;
+  width: 300px;
+  margin-top: 9px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#car-loaded {
+  display: inherit;
+  border-radius: 15px;
+  margin-top: 9px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.col-md-4 carCard {
+  background-color: blue;
+  border-radius: 15px;
+  font-size: 17px;
+  margin-top: -9px;
+  margin-bottom: 5px;
+}
+
+.availability {
+  font: blue;
+}
+
+/* start of cards*/
+#carCard--1 {
+  width: 200px;
+  height: 90px;
+  display: inline;
+  border-radius: 15px;
+}
+
+/* start of cards*/
+#carCard--2 {
+  display: inline-block;
+  border-radius: 15px;
+}
+
+#carCard--3 {
+  display: inline;
+  border-radius: 15px;
+}
+
+#carCard--4 {
+  display: inline;
+  border-radius: 15px;
+}
+
+#carCard--5 {
+  display: inline;
+  border-radius: 15px;
+}
+
+#carCard--6 {
+  display: inline;
+  border-radius: 15px;
+}
+
+/*end of cards*/
+/*End of Card Formatting*/
+
+/*footer*/
+
+.panel-footer.panel-custom {
+  border: 2px solid black;
+  border-top: 0px;
+}
+
+footer {
+  background-color: #C69429;
+  padding: 25px;
+  opacity: 0.5;
+}
  
