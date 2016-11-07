@@ -8,9 +8,9 @@ CarLot = (function(carModifier) {
 	}
 
 	carModifier.resetValues = function() { //give carModifier function a resetvalue method and set it to an anonymous function
-		var car = document.getElementsByClassName("container"); // set all car cards elements to a variable call car
-		for (var k=0; k<cars.length; k++) { //loop through again and set to variable of k to avoid confusion
-			item=cars[k]; //access sub k
+		var car = document.getElementsByClassName("carCardClass"); // set all car cards elements to a variable call car
+		for (var k=0; k<carCardClass; k++) { //loop through again and set to variable of k to avoid confusion
+			item=carCardClass[k]; //access sub k
 			item.style.backgroundColor = "beige"; //set each items background color
 			item.style.borderWidth = "3px"; //set each items style class to a borderwidth of 3
 			item.classList.remove("active");//remove each items active class 

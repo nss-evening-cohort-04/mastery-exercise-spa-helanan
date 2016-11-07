@@ -1,11 +1,11 @@
 var CarLot = (function(carModifier) { //set CarLot variable to a function of modify cars 
 
     carModifier.activateEvents = function () { //set the modify car function with activated events to an empty function
-        var carCardContainer = document.getElementsByClassName("carCardClass"); //get the carCard Element and set it to the carCard variable
+        var carCardClass = document.getElementsByClassName("carCardClass"); //get the carCard Element and set it to the carCard variable
         var card = null; //set each card to null
 
-        for (var j=0; j<carCardContainer.length; j++) { //for each item in the active modifier loop through another array with a variable of j to avoid confusion
-            carCardContainer[j].addEventListener("click", function(event) { //add event listener to each card element and its variable and pass through a function called event
+        for (var j=0; j<carCardClass.length; j++) { //for each item in the active modifier loop through another array with a variable of j to avoid confusion
+            carCardClass[j].addEventListener("click", function(event) { //add event listener to each card element and its variable and pass through a function called event
                 card = event.currentTarget; //set the null cards value to the event function and access thier target value
                 carModifier.resetValues();
                 carModifier.clickedStyling(card, "pink");
@@ -31,6 +31,8 @@ var CarLot = (function(carModifier) { //set CarLot variable to a function of mod
             }); //END of text input event listeners
         }; //END of modify Cars active class event listener
     }
+
+
 
     return carModifier; //return modified cars
 })(CarLot || {}); //pass through carlot
