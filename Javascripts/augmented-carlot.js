@@ -1,10 +1,13 @@
-//any changes I want to make to the original (setters/getters)
-CarLot = (function(carModifier) {
 
-	carModifier.clickedStyling = function(car, color) {
-		car.style.borderWidth = "6px";
-		car.style.backgroundColor = color;
-		car.classList.add("active");
+CarLot = (function(cars) {
+
+carCardClass(){
+	cardloaded = document.getElementsByClassName("carCardClass");
+	carCardClass.clickedStyling = function(carCardClass) {
+		carCardClass.style.borderWidth = "6px";
+		carCardClass.style.backgroundColor = color;
+		carCardClass.classList.add("active");
+		console.log("carCardClass", carCardClass);
 	}
 
 	carModifier.resetValues = function() { //give carModifier function a resetvalue method and set it to an anonymous function

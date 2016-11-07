@@ -1,11 +1,13 @@
 //original javascript
 var CarLot = (function(carModifier){ //carlot modifier
 
+ console.log("carModifier", carModifier);
+
   carModifier.populatePage = function(cars){
     console.log("cars", cars);
     // do stuff
     var carsToPage = document.getElementById("car-loaded"); //gets element for card output
-    textInputUpdaterEl = document.getElementById("textInputUpdaterEl");//get text input area
+    textInputUpdater = document.getElementById("textInputUpdaterEl");//get text input area
     outPutString = "", //set output string to empty
     carDescription = "", //sets description string to empty
     carCardContainer = "", //Car card, set to empty
@@ -23,7 +25,7 @@ var CarLot = (function(carModifier){ //carlot modifier
         }
       //function 4: output to DOM, find selectors for each data key value and instert into string with divs
       
-            outPutString += `<div class="col-md-4 carCard" id="carCard-${counter}" style="border:3px solid">` 
+            outPutString += `<div class="col-md-4 carCard" id="carCard--${counter}" style="border:3px solid">` 
                outPutString += `<div class="row">`
                     outPutString += `<div class="container-fluid carContainer">`
                       outPutString += `<div id="carCardClass">`
@@ -46,10 +48,10 @@ var CarLot = (function(carModifier){ //carlot modifier
         counter ++;
       };
     }
+    console.log("carsToPage", carsToPage);
   }   
   return carModifier;
 
-})(CarLot || {}); //pass through CarLot
 
-CarLot.populatePage(["thing",'thing'])
+})(CarLot || {}); //pass through CarLot
 

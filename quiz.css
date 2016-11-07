@@ -5,46 +5,63 @@
 
 body {
   padding-top: 0px;
+  margin: 0px;
+  font-size: 17px;
 }
 /*  jumbotron* div1/*/
 .jumbotron {
   background-image: url('IMG/car_website_head.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 0px;
+  margin: 0px;
   }
 
     h1 {
       font-family: 'Shrikhand', cursive;
+      margin: 0px;
     }
 
     p {
       font-family: 'Farsan', cursive;
+      margin: 0px;
+    }
+
+   .navbar-default .navbar-nav>li>a {
+      color: black;
+      font-family: 'Farsan', cursive;
+      font-size: 25px;
+      font-weight: bold;
+      margin: 3px 3px 0px 0px;
     }
 
 /*nav-bar start*/
 /*parent*/
 nav.navbar.navbar-default.navbar-custom {
-
+position: sticky;
+margin: 0px;
 }
 
 /*1st child*/
 
     div.container-fluid {
-
+      position: inherit;
+      margin: 0px;
     }
 
     div.navbar-header.navbar-custom {
       position: inherit;
+      margin: 0px;
     }
 
 navbar-form navbar-left {
+  position: inherit;
   color: black;
+  margin: 0px;
 }
 
+/*parent navbar element*/
 .navbar {
-  margin-bottom: 25px;
-  padding-top: 15px;
+  margin: 0px;
   border-radius: 0;
   border-color: #C69429;
   font-family: 'Droid Serif', serif;
@@ -52,25 +69,44 @@ navbar-form navbar-left {
   opacity: 0.5;
 }
 
-#nav {
-  float: right;
-  margin-left: 2px;
-  margin-right: 2px;
+/*input*/
+input#textInputUpdaterEl.form-control {
+  background-color: beige; 
+  display: -webkit-flex
+  display: flex;
+  max-width: 33.3333%;
+  float: left;
+  margin-top: 13px;
+  font-family: 'Farsan', cursive;
+  font-size: 20px;
+  padding-top: 14px;
 }
 
-#inputSuccess5 {
-  position: static;
+/*button*/
+button.btn.btn-default {
+  margin-top: 13px;
+  margin-left: 3px;
+  margin-bottom: -13px;
+  padding-bottom: 7px;
+  line-height: 15px;
+  font-family: 'Farsan', cursive;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 10px;
+  background-color: pink !important;
 }
 
 .panel-heading.panel-custom {
-  border: 2px solid black;
-  border-bottom: 0px;
   background: teal;
   color: white;
   font-family: 'Shrikhand', serif;
   font-size: 1.50em;
   font-variant: small-caps;
   text-align: center;
+  margin-right:-15px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
 
 .panel-body.panel-custom {
@@ -79,39 +115,56 @@ navbar-form navbar-left {
   border-top: 0px;
   border-radius: 15px;
   text-align: center;
+  margin: 0px;
 }
 
-/*card formatting start
-
-/*toplevel*/
-
-div#make {
- display: -webkit-flex
- display: flex;;
- margin-top: -20%;
- order: 3
+div#load-inventory.containerLoad {
+  margin: 0px;
 }
 
-/*parent*/
-.containerLoad {
-  background-color: beige;
-  font-size: 17px;
-  margin-right: 20px;
-  margin-left: 20px;
-  border-radius: 15px;
-  display: -webkit-flex; /* Safari */
-  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+div#car-loaded.carCardClass {
+  max-width: 100%;
+  margin-left: 80px;
+}
+
+div#make.panel-heading.panel-custom {
+ /*display: -webkit-flex
+ display: flex;*/
+ border: none;
+ border-top-right-radius: 12px;
+ border-top-left-radius: 12px;
+ margin-bottom: 20px;
+ margin-top: 0px;
+ margin-left: 0px;
+}
+
+/*inner*/
+div.container-fluid.carContainer {
+margin: 0px;
+width: inherit;
+height: inherit;
+}
+
+div#carcard-1.col-md-4.carCard {
+ background-color: lightgrey;
+ border-top-right-radius: 12px;
+ border-top-left-radius: 12px;
+ margin: 0px;
+
+display: -webkit-flex;  Safari 
+  -webkit-flex-wrap: wrap;  Safari 6.1+ 
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  width: inherit;
+  height: inherit;
+}
+
+.carCard {
+  max-width: 33.333%;
 }
 
 /*1st child* (.cardCardClass)/*/
 #car-loaded {
-  display: inherit;
-  border-radius: 15px;
-  margin-top: 9px;
-  margin-bottom: 200px;
-  margin-right: 20px;
   display: -webkit-flex;  Safari 
   -webkit-flex-wrap: wrap;  Safari 6.1+ 
   display: flex;
@@ -119,15 +172,7 @@ div#make {
 }
 
 .row {
-  color: black;
-  border-radius: 15px;
-  background-color: lightgrey;
   font-family: 'Farsan', cursive;
-  display: -webkit-flex;  Safari 
-  -webkit-flex-wrap: wrap;  Safari 6.1+ 
-  display: flex;
-  flex-wrap: wrap
-  text-align: center;
 }
 
 .col-sm-4 {
@@ -135,102 +180,126 @@ div#make {
   margin-top: 9px;
   margin-bottom: 200px;
   margin-right: 20px;
-  display: inline-block;
+  margin-left: 0px;
   display: -webkit-flex;  Safari 
   -webkit-flex-wrap: wrap;  Safari 6.1+ 
   display: flex;
   flex-wrap: wrap
   text-align: center;
+  z-index:4;
 }
 
 .list-group {
-  border-radius: 15px;
-  margin-top: 9px;
-  margin-bottom: 200px;
-  margin-right: 20px;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  display: flex;
-  flex-wrap: wrap
-  text-align: center;
+ clear: all;
 }
 
 .panel panel-primary custom {
-  border-radius: 15px;
-  margin-top: 9px;
-  margin-bottom: 200px;
-  margin-right: 20px;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  display: flex;
-  flex-wrap: wrap
-  text-align: center;
+ clear: all;
 }
 
 .container-fluid carContainer {
-  width: 100%;
-  border-radius: 15px;
-  margin-top: 9px;
-  margin-bottom: 200px;
-  margin-right: 20px;
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-  display: flex;
-  flex-wrap: wrap
-  text-align: center;
+  clear: all;
 }
 
 #carCardClass {
-  display: inherit;
-  border-radius: 15px;
-  width: 300px;
-  margin-top: 9px;
-  margin-bottom: 200px;
-  margin-right: 20px;
-  display: inline-block;
   text-align: center;
+  margin: 0px;
+  padding 0px;
 }
 
-
-
-
 .col-md-4.carCard {
-  background-color: light grey;
-  border-radius: 15px !important;
-  font-size: 17px;
-  margin-top: -9px;
-  margin-bottom: 5px;
-  display: -webkit-flex; 
-  -webkit-flex-wrap: wrap; 
-  display: flex;
-  flex-wrap: wrap;
+  clear: all;
 }
 
 #carCard {
-  border-radius: 15px;
-}
-
-#availability {
-  font: blue;
+  clear: all;
 }
 
 .description {
 text-align: left;
+  margin: 0px;
+  padding: 0px;
 }
 
 .price {
   font-family: 'Shrikhand', serif;
   font-size: 18px;
+  margin: 0px;
+  padding: 0px;
 }
 
+/*price color*/
 em {
   color: #E8A438;
+  padding: 0px;
+  margin: 0px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 custom{
+    min-height: 1px;
+    background-color: lightgrey;
+    border-radius: 15px;
+    margin-left: 50px;
+    padding-left: 0px;
+    margin-bottom: 0px; 
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+div#year {
+  font-family: 'Shrikhand', serif;
+  font-size: 35px;
+  color: azure;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.availability {
+  color: yellow;
+  font-family: 'Shrikhand', serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+hr {
+  position: relative;
+  margin-left: 10px;
+}
+
+.panel-footer.panel-custom {
+  margin-right: -15px
+}
+
+div.panel-footer.panel-custom {
+  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  position: fixed;
+}
+
+#carCard--1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#carCard--2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.description {
+  padding: 10px;
 }
 
 /*end of cards*/
 /*End of Card Formatting*/
 
 /*footer*/
+footer.container-fluid.text-center {
+  background-color: none;
+  font-family: 'Farsan', cursive;
+  margin-left: -180px;
+}
 
 footer {
   background-color: #C69429;
@@ -238,8 +307,10 @@ footer {
   opacity: 0.5;
 }
 
-.panel-footer.panel-custom {
-  border: 2px solid black;
-  border-top: 0px;
+button.btn.btn-danger {
+  margin-top: 5px;
 }
+
+
+
 
