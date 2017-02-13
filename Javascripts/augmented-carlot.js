@@ -1,22 +1,18 @@
+//any changes I want to make to the original (setters/getters)
+var CarLot = (function(carModifier) {
 
-CarLot = (function(cars) {
-
-carCardClass(){
-	cardloaded = document.getElementsByClassName("carCardClass");
-	carCardClass.clickedStyling = function(carCardClass) {
-		carCardClass.style.borderWidth = "6px";
-		carCardClass.style.backgroundColor = color;
-		carCardClass.classList.add("active");
-		console.log("carCardClass", carCardClass);
+	carModifier.clickedStyling = function(car) {
+		car.style.borderWidth = "6px";
+		car.style.backgroundColor = color;
+		car.classList.add("active");
 	}
 
 	carModifier.resetValues = function() { //give carModifier function a resetvalue method and set it to an anonymous function
-		var car = document.getElementsByClassName("carCardClass"); // set all car cards elements to a variable call car
-		for (var k=0; k<carCardClass; k++) { //loop through again and set to variable of k to avoid confusion
-			item=carCardClass[k]; //access sub k
-			item.style.backgroundColor = "beige"; //set each items background color
-			item.style.borderWidth = "3px"; //set each items style class to a borderwidth of 3
-			item.classList.remove("active");//remove each items active class 
+		var cars = document.getElementsByClassName("carCardEvents"); // set all car cards elements to a variable call car
+		for (var k=0; k<cars.length; k++) { //loop through again and set to variable of k to avoid confusion
+			cars[k].style.backgroundColor = "beige"; //set each items background color
+			cars[k].style.borderWidth = "3px"; //set each items style class to a borderwidth of 3
+			cars[k].classList.remove("active");//remove each items active class 
 		}
 	};
 
